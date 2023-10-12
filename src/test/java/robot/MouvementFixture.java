@@ -27,9 +27,10 @@ public class MouvementFixture {
                if(wallE.getYposition()==3) result="avance d'une case vers le sud";
                break;
            case "tourne dans le sens":
+               wallE.turnRight();
                if(wallE.getDirection() == Direction.EAST) result="est orienté vers l'est";
                break;
-           case "est orienté vers l'est":
+           case "tourne dans le sens inverse":
                wallE.turnLeft();
                if(wallE.getDirection() == Direction.WEST) result="est orienté vers l'ouest";
                break;
